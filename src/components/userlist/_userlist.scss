@@ -2,6 +2,7 @@
 $userlist-table-header-color: #E7E4E0;
 $userlist-bg-color: #fff;
 $userlist-border-color: #E9E9E9;
+$userlist-del-tag-color: #A99F93;
 
 .userlist {
   .displayflex {
@@ -32,13 +33,13 @@ $userlist-border-color: #E9E9E9;
     }
     .filter-tag {
       @extend .displayflex;
-      background: #DFD6CA;
+      background: $app-tab-active-color;
       margin-bottom: 20px;
       padding-right: 0;
       border-radius: 3px;
       margin-right: 10px;
       span:last-child {
-        background: #A99F93;
+        background: $userlist-del-tag-color;
         padding: 15px 12px;
         border-radius: 3px;
         cursor: pointer;

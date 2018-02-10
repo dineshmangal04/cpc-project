@@ -6,6 +6,7 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 =============================================*/
 
 @import 'vars/body';
+@import 'vars/age-filter';
 
 /*===========================================
 ========= Loading Bootstrap Styles ==========
@@ -15,8 +16,8 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 /*===========================================
 ========= Loading Customize Styles ==========
 =============================================*/
-// loading variables
-@import 'vars/age-filter';
+
+
 
 // loading blocks
 @import 'blocks/body';
