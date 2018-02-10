@@ -1,0 +1,6 @@
+<div class="row filter-bar tab">
+		<div class="tablinks col-sm-2" ng-click="agefilterCtrl.onUpdate($event, {maxAge: ageInfo.maxAge, minAge: ageInfo.minAge, desc: ageInfo.desc})" ng-repeat="ageInfo in agefilterCtrl.ageFilterList track by $index" id="{{ageInfo.minAge}}-{{ageInfo.maxAge}}">
+			<p class="count">{{agefilterCtrl.getFilterCount(ageInfo)}}</p>
+			<p class="filter-desc">{{ageInfo.desc}}</p>
+		</div>
+</div>

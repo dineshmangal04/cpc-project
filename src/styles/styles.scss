@@ -1,0 +1,26 @@
+// for fixing of loading bootstrap icon files
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+
+/*===========================================
+===== Loading Custom Setup of Variables =====
+=============================================*/
+
+@import 'vars/body';
+
+/*===========================================
+========= Loading Bootstrap Styles ==========
+=============================================*/
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+/*===========================================
+========= Loading Customize Styles ==========
+=============================================*/
+// loading variables
+@import 'vars/age-filter';
+
+// loading blocks
+@import 'blocks/body';
+
+//loading components Styles
+@import '../components/age-filter/agefilter';
+@import '../components/userlist/userlist';

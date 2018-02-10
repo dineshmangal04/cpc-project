@@ -1,0 +1,22 @@
+.filter-bar {
+	list-style: none;
+	padding: 0;
+	display: flex; 
+	border-radius: 5px;
+	.tablinks {
+		text-align: center;
+		cursor: pointer;
+		border-right: 2px solid #F0F0F0;
+		background: $app-tab-default-bg-color;
+		&:last-child {
+			border-right: none;
+		}
+		&:hover {
+			background: $app-tab-hover-color
+		}
+		&.filteractive {
+			background: $app-tab-active-color;
+		} 
+	}
+
+}

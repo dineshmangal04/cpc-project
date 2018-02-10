@@ -1,0 +1,48 @@
+/* Style the tab */
+$userlist-table-header-color: #E7E4E0;
+$userlist-bg-color: #fff;
+$userlist-border-color: #E9E9E9;
+
+.userlist {
+  .displayflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .list-users {
+    margin: 30px -15px 30px -15px;
+    background: $userlist-bg-color;
+    padding: 30;
+    border-radius: 5px;
+    border: 2px solid $userlist-border-color;
+    .table-header {
+      background: $userlist-table-header-color;
+    }
+    .table-body {
+      td {
+        vertical-align: middle;
+      }
+      .username {
+        @extend .displayflex;
+        border: none;
+        span:first-child > img {
+          width: 60%;
+        }
+      }
+    }
+    .filter-tag {
+      @extend .displayflex;
+      background: #DFD6CA;
+      margin-bottom: 20px;
+      padding-right: 0;
+      border-radius: 3px;
+      margin-right: 10px;
+      span:last-child {
+        background: #A99F93;
+        padding: 15px 12px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+    }
+  }
+}

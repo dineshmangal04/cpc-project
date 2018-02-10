@@ -1,0 +1,45 @@
+<div class="container userlist">
+	<div class="row">
+		<div class="col-sm-12">
+			<header>
+				<h4>{{userlistCtrl.heading}}</h4>
+			</header>
+		</div>
+	</div>
+	<age-filter on-update-filter="userlistCtrl.onUpdateAgeFilter(maxAge, minAge, desc)" user-list="userlistCtrl.userlistAll"></age-filter>
+	<section class="list-users">
+			<div class="row" >
+				<div class="col-sm-2 filter-tag" ng-repeat="agefiltertag in userlistCtrl.ageFilter track by $index">
+					<span>{{agefiltertag.desc}}</span>
+					<span ng-click="userlistCtrl.onremoveAgeFilter($index)">X</span>	
+				</div>
+			</div>
+			<div class="row">
+					<div class="col-sm-12">
+						<table class="table table-striped table-bordered table-hover table-condensed">
+							<thead class="table-header">
+								<tr>
+									<th>ID</th>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Age</th>
+									<th>Action</th>
+								</tr>
+							</thead>
+							<tbody class="table-body">
+								<tr  ng-repeat="userinfo in userlistCtrl.userlistActive track by $index">
+									<td>{{userinfo.id}}</td>
+									<td class="username"><span><img src="{{userinfo.img}}" /></span><span>{{userinfo.name}}</span></td>
+									<td>{{userinfo.desc}}</td>
+									<td>{{userinfo.age}}</td>
+									<td>Edit</td>
+								</tr>
+							</tbody>
+						</table>
+				
+				
+					</div>
+				</div>
+	</section>
+	
+</div>
