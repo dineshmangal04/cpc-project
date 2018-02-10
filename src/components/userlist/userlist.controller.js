@@ -8,7 +8,7 @@ export default class UserlistController {
 
 	$onInit = () => {
 		this.heading = 'Citizen Age';
-		this.$log.info('Activated Home View.');
+		//this.$log.info('Activated Home View.');
 		this.userlistAll = [];
 		this.userlistActive = [];
 		this.ageFilter = [];
